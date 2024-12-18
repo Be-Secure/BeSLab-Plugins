@@ -69,7 +69,7 @@ function install_docker_compose() {
 		sudo chmod +x /usr/local/bin/docker-compose
 
 		__besman_echo_yellow "Docker Compose installed successfully!"
-		docker-compose --version
+		docker compose --version
 		if [ $? -ne 0 ]; then
 			__besman_echo_red "Failed to download Docker Compose."
 			return 1
